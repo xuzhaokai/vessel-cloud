@@ -15,7 +15,7 @@ public class SpringCloudZuulApplication {
   }
 
   @Bean
-  public TokenFilter tokenFilter(){
+  public TokenFilter tokenFilter() {
     return new TokenFilter();
   }
 }

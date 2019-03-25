@@ -1,18 +1,17 @@
-
 server:
-    port : 9001
+  port: 9001
 spring:
-    application:
-        name: spring-cloud-config-server
-    cloud:
-        config:
-            server:
-                git:
-                    uri: https://github.com/xuzhaokai/vessel-cloud.git     # ??git?????
-                    search-paths: config-repo                             # git???????????????????,???
-                    username: xuzhaokai                                        # git?????
-                    password: 5201314Kai                                   # git?????
+  application:
+    name: spring-cloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/xuzhaokai/vessel-cloud.git     # ??git?????
+          search-paths: config-repo                             # git???????????????????,???
+          username: xuzhaokai                                        # git?????
+          password: 5201314Kai                                   # git?????
 eureka:
-    client:
-        serviceUrl:
-            defaultZone: http://localhost:8111/eureka/   ## ????eurka??
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8111/eureka/   ## ????eurka??

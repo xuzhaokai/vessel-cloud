@@ -14,6 +14,6 @@ public class VesselRemoteHystrix implements VesselRemote {
 
   @Override
   public String hello(@RequestParam(value = "name") String name) {
-    return "hello" +name+", this messge send failed ";
+    return "hello" + name + ", this messge send failed ";
   }
 }

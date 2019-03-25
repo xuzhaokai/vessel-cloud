@@ -1,9 +1,9 @@
 package com.oocl.springcloudzuul.hystrix;
 
-
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.cloud.netflix.zuul.filters.route.ZuulFallbackProvider;
@@ -26,10 +26,10 @@ public class ProducerFallback implements ZuulFallbackProvider {
 
   @Override
   public ClientHttpResponse fallbackResponse() {
-//    if (cause != null && cause.getCause() != null) {
-//      String reason = cause.getCause().getMessage();
-//      logger.info("Excption {}", reason);
-//    }
+    //    if (cause != null && cause.getCause() != null) {
+    //      String reason = cause.getCause().getMessage();
+    //      logger.info("Excption {}", reason);
+    //    }
     return backResponse();
   }
 
@@ -69,12 +69,12 @@ public class ProducerFallback implements ZuulFallbackProvider {
     };
   }
 
-//  @Override
-//  public ClientHttpResponse fallbackResponse(Throwable cause) {
-//    if (cause != null && cause.getCause() != null) {
-//      String reason = cause.getCause().getMessage();
-//      logger.info("Excption {}",reason);
-//    }
-//    return fallbackResponse();
-//  }
+  //  @Override
+  //  public ClientHttpResponse fallbackResponse(Throwable cause) {
+  //    if (cause != null && cause.getCause() != null) {
+  //      String reason = cause.getCause().getMessage();
+  //      logger.info("Excption {}",reason);
+  //    }
+  //    return fallbackResponse();
+  //  }
 }

@@ -12,10 +12,22 @@
         <module name="eureka-server-a" />
         <module name="spring-cloud-consumer-hystrix" />
         <module name="spring-cloud-zuul" />
+        <module name="vessel-state" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="eureka-consumer-ribbon" target="1.8" />
+      <module name="config-client" target="1.8" />
+      <module name="config-server" target="1.8" />
+      <module name="eureka-consumer" target="1.8" />
+      <module name="eureka-server-a" target="1.8" />
+      <module name="spring-cloud" target="1.8" />
+      <module name="spring-cloud-consumer-hystrix" target="1.8" />
+      <module name="spring-cloud-zuul" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="vessel-state" options="-parameters" />
+    </option>
   </component>
 </project>
