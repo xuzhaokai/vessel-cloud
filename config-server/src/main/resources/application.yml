@@ -16,3 +16,16 @@ eureka:
     client:
         serviceUrl:
             defaultZone: http://firsthost:8111/eureka/,http://secondhost:8222/eureka/,http://thirdhost:8333/eureka/   ## eurka
+
+zuul:
+    host:
+        socket-timeout-millis: 60000
+        connect-timeout-millis: 60000
+
+hystrix:
+    command:
+        default:
+            execution:
+                isolation:
+                    thread:
+                        timeoutInMilliseconds: 60000
