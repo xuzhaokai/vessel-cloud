@@ -27,3 +27,16 @@ eureka:
 management:
   security:
     enabled: false
+
+zuul:
+    host:
+        socket-timeout-millis: 600000
+        connect-timeout-millis: 600000
+
+hystrix:
+    command:
+        default:
+            execution:
+                isolation:
+                    thread:
+                        timeoutInMilliseconds: 6000
