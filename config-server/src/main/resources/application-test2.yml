@@ -1,0 +1,29 @@
+
+server:
+    port : 9001
+spring:
+    application:
+        name: spring-cloud-config-server
+    cloud:
+        config:
+            server:
+                git:
+                    uri: https://github.com/gwinda/vessel-cloud/     # git
+                    search-paths: config-repo/config-vessel,config-repo/config-status
+                    username: gwinda
+                    password: ting0902.                              # git?????
+    rabbitmq:
+        host: 10.222.22.53
+        port: 5672
+        username: admin
+        password: 123456
+
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:8111/eureka/   ## ????eurka??
+
+
+management:
+  security:
+    enabled: false

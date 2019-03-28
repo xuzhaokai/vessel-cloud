@@ -11,7 +11,13 @@ spring:
                     uri: https://github.com/xuzhaokai/vessel-cloud.git     # git
                     search-paths: config-repo/config-vessel,config-repo/config-status
                     username: xuzhaokai
-                    password: 5201314Kai
+                    password: 5201314Kai                                                             # git?????
+    rabbitmq:
+        host: 10.222.22.53
+        port: 5672
+        username: admin
+        password: 123456
+
 eureka:
     client:
         serviceUrl:
@@ -21,6 +27,10 @@ zuul:
     host:
         socket-timeout-millis: 60000
         connect-timeout-millis: 60000
+
+management:
+    security:
+        enabled: false
 
 hystrix:
     command:
