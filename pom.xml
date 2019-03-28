@@ -69,6 +69,7 @@
     <module>eureka-server-a</module>
     <module>spring-cloud-consumer-hystrix</module>
     <module>spring-cloud-zuul</module>
+    <module>spring-cloud-security</module>
   </modules>
 
 
