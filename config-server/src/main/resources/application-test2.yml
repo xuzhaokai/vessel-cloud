@@ -8,10 +8,10 @@ spring:
         config:
             server:
                 git:
-                    uri: https://github.com/xuzhaokai/vessel-cloud.git     # git
+                    uri: https://github.com/gwinda/vessel-cloud/     # git
                     search-paths: config-repo/config-vessel,config-repo/config-status
-                    username: xuzhaokai
-                    password: 5201314Kai                                                             # git?????
+                    username: gwinda
+                    password: ting0902.                              # git?????
     rabbitmq:
         host: 10.222.22.53
         port: 5672
@@ -21,8 +21,9 @@ spring:
 eureka:
     client:
         serviceUrl:
-            defaultZone: http://firsthost:8111/eureka/,http://secondhost:8222/eureka/,http://thirdhost:8333/eureka/   ## eurka
+            defaultZone: http://localhost:8111/eureka/   ## ????eurka??
+
 
 management:
-    security:
-        enabled: false
+  security:
+    enabled: false
