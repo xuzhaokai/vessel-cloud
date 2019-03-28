@@ -8,11 +8,11 @@ spring:
         config:
             server:
                 git:
-                    uri: https://github.com/xuzhaokai/vessel-cloud.git     # ??git?????
-                    search-paths: config-repo/config-vessel,config-repo/config-status                            # git???????????????????,???
-                    username: xuzhaokai                                        # git?????
-                    password: 5201314Kai                                   # git?????
+                    uri: https://github.com/xuzhaokai/vessel-cloud.git     # git
+                    search-paths: config-repo/config-vessel,config-repo/config-status
+                    username: xuzhaokai
+                    password: 5201314Kai
 eureka:
     client:
         serviceUrl:
-            defaultZone: http://localhost:8111/eureka/   ## ????eurka??
+            defaultZone: http://firsthost:8111/eureka/,http://secondhost:8222/eureka/,http://thirdhost:8333/eureka/   ## eurka
